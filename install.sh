@@ -8,7 +8,7 @@ if [ "$scmbDir" != "$HOME/.scm_breeze" ]; then
 fi
 
 # This loads SCM Breeze into the shell session.
-exec_string="[ -s \"$HOME/.scm_breeze/scm_breeze.sh\" ] && source \"$HOME/.scm_breeze/scm_breeze.sh\""
+exec_string="[ -s \"\$HOME/.scm_breeze/scm_breeze.sh\" ] && source \"\$HOME/.scm_breeze/scm_breeze.sh\""
 
 # Add line to bashrc and bash_profile if not already present.
 added_to_profile=false
