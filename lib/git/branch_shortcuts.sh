@@ -22,7 +22,7 @@ function _scmb_git_branch_shortcuts {
 
   # Use ruby to inject numbers into git branch output
   ruby -e "$(
-    cat <<EOF
+    /bin/cat <<EOF
     output = %x($_git_cmd branch --color=always $(token_quote "$@"))
     line_count = output.lines.to_a.size
     output.lines.each_with_index do |line, i|
