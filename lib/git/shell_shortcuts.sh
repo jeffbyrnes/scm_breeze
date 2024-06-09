@@ -190,7 +190,7 @@ if [ "$shell_ls_aliases_enabled" = "true" ] && builtin command -v ruby >/dev/nul
 
     # Use ruby to inject numbers into ls output
     echo "$ll_output" | ruby -e "$(
-      \cat <<EOF
+      \/bin/cat <<EOF
 output = STDIN.read
 e = 1
 re = /^(([^ ]* +){8})/
