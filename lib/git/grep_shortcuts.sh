@@ -19,6 +19,6 @@ git_grep_shortcuts() {
   IFS=$' \t\n'
 
   # Print status
-  cat "$tmp_grep_results" | sed '$d' | less -SfRMXFi
+  /bin/cat "$tmp_grep_results" | sed '$d' | less -SfRMXFi
   rm -f "$tmp_grep_results"
 }

@@ -53,7 +53,7 @@ oneTimeSetUp() {
   mkdir submodules_everywhere
   cd submodules_everywhere
   git init
-  cat >.gitmodules <<EOF
+  /bin/cat >.gitmodules <<EOF
 [submodule "very/nested/directory/red_submodule"]
 [submodule "very/nested/directory/green_submodule"]
 [submodule "very/nested/directory/blue_submodule"]
@@ -103,7 +103,7 @@ test_repo_index_command() {
 
   # Test that all repos are detected, and sorted alphabetically
   assertIncludes "$(index_no_newlines)" $(
-    cat <<EXPECT | sort -t "." -k1,1 | tr -d '\n' | awk '{print ".*"$1}'
+    /bin/cat <<EXPECT | sort -t "." -k1,1 | tr -d '\n' | awk '{print ".*"$1}'
 bitbucket.*
 blue_submodule.*
 github.*
