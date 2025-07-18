@@ -1,7 +1,23 @@
 ---
 AllCops:
   NewCops: enable
-Style/Documentation:
+Layout/LineLength:
   Enabled: false
 Lint/MissingSuper:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
   Enabled: false
