@@ -17,8 +17,8 @@
     "shellcheck": "shellcheck",
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,js,json,md}\"",
-    "cspell": "cspell --config .cspell.json .",
-    "cspell:fix": "cspell --config .cspell.json --fix .",
+    "cspell": "cspell .",
+    "cspell:fix": "cspell --fix .",
     "generate-lockfile-dict": "npx @docspring/cspell-lockfile-dicts"
   },
   "keywords": [],
